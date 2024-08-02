@@ -1,10 +1,11 @@
 import logo from './Assets/R-removebg-preview.png';
 import './App.css';
+import Card from './Component/Card';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="header">
         <img src={logo} className="App-logo" alt="logo" />
         <a
           className="App-link"
@@ -21,9 +22,7 @@ function App() {
          <button className='search-btn'>Search</button>
       </div>
        <div className='cards'>
-         <div className='card'>
-
-         </div>
+         <Card/>
        </div>
       <div className='load'>
       <button className='load-btn'>Load more </button>

@@ -13,7 +13,7 @@
   }
 } */
 
-.App-header {
+.header {
   background-color: #ffffff;
   min-height: 100vh;
   display: flex;
@@ -29,7 +29,7 @@
 }
 
 body{
-  height: 100vh;
+  height: 100%;
 }
 .search input{
   width: 700px;

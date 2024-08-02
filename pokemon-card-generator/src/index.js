@@ -8,8 +8,8 @@ import Card from './Component/Card';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Card/>
+    <App />
+ 
   </React.StrictMode>
 );
 
