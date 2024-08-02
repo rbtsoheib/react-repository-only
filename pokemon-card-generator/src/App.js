@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './Assets/R-removebg-preview.png';
 import './App.css';
 import Card from './Component/Card';
@@ -16,18 +17,18 @@ function App() {
           Search for your Pokemon
         </a>
       </header>
-      <body>
-      <div className="search">
-         <input type="text" placeholder='   search...' className=''/>
-         <button className='search-btn'>Search</button>
-      </div>
-       <div className='cards'>
-         <Card/>
-       </div>
-      <div className='load'>
-      <button className='load-btn'>Load more </button>
-      </div>
-      </body>
+      <main>
+        <div className="search">
+          <input type="text" placeholder='search...' className=''/>
+          <button className='search-btn'>Search</button>
+        </div>
+        <div className='cards'>
+          <Card />
+        </div>
+        <div className='load'>
+          <button className='load-btn'>Load more</button>
+        </div>
+      </main>
     </div>
   );
 }
