@@ -1,0 +1,15 @@
+nav{
+
+    background-color: rgb(189, 179, 179);
+    display: flex;
+    overflow: hidden;
+
+}
+
+nav ul li{
+
+    list-style: none;
+    display: block;
+    margin: 20px;
+
+}
