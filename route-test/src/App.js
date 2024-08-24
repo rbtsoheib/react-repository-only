@@ -1,28 +1,32 @@
 import React from "react";
-import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
-import Dashboard from "./components/Dashboard";
-import About from "./components/About";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
-import Error from "./Error";
-import "./App.css"
+import About from "./components/About";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
-    <>
-         <BrowserRouter>
-           <Navbar />
-           <Routes>
-             <Route path="/home" element={<Home />} />
-             <Route path="/about" element={<About />} />
-             <Route path="/dashboard" element={<Dashboard />}>
-             <Route path="stats" element={<Stats />} />
-             <Route path="bookstats" element={<BookStats />} />
-             </Route>
-             <Route path="*" element={<Error />} />
-           </Routes>
-         </BrowserRouter>
-       </>
-     );
-   }
+    <BrowserRouter>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/home">Home </Link>
+          </li>
+          <li>
+            <Link to="/about">About </Link>
+          </li>
+          <li>
+            <Link to="/dashboard">Dashboard </Link>
+          </li>
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
 export default App;

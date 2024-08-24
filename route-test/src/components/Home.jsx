@@ -1,13 +1,16 @@
 import React from "react";
 
 function Home() {
+
   let homeStyle = {
     display: "flex",
     flexDirection: "column",
-    marginLeft: '450px',
-    marginTop: '100px',
+    justifyContent: "center", 
+    alignItems: "center", 
+    color: "violet",
   };
-  
+
+
   return (
     <div style={homeStyle}>
       <h1>Welcome to the homepage</h1>
@@ -17,4 +20,3 @@ function Home() {
 }
 
 export default Home;
-

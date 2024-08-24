@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 function DashChoice() {
   const navigate = useNavigate();
   return (
-    <div style={dashChoiceStyle}>
+    <div style={DashChoice}>
       <div
         className="dash-choice"
         onClick={() => {
